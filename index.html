@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>أذكار المسلم</title>
+  </head>
+  <body>
+    <!-- Start Style Of Page -->
+    <style>
+      * {
+        --webkit-box-sizing: border-box;
+        --moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        background: radial-gradient(#eaeddb, #f0ebbe, #fff);
+      }
+      .header {
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        /* margin: 50px; */
+      }
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 250px auto;
+      }
+      @media (max-width: 767px) {
+        .container {
+          margin: auto;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+      .box1,
+      .box2,
+      .box3 {
+        background: radial-gradient(#d7f7bc, #c3f76e, #8cfa61);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        padding: 20px;
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        cursor: pointer;
+        box-shadow: 15px 10px 10px #878787;
+      }
+      p:first-child {
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 3px 5px 5px #3b5802;
+        cursor: pointer;
+      }
+      p:last-child {
+        font-size: 32px;
+        font-weight: bold;
+        text-shadow: 3px 5px 5px #3b5802;
+        cursor: pointer;
+      }
+    </style>
+    <!-- End Style Of Page -->
+
+    <!-- =================================================================== -->
+
+    <!-- Start Content Of Page -->
+    <div class="header">
+      <div class="container">
+        <div class="box1">
+          <p>سبحان الله</p>
+          <p class="btn1">0</p>
+        </div>
+        <div class="box2">
+          <p>الحمد الله</p>
+          <p class="btn2">0</p>
+        </div>
+        <div class="box3">
+          <p>الله أكبر</p>
+          <p class="btn3">0</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Content Of Page -->
+
+    <!-- =================================================================== -->
+
+    <!-- Start JS Code -->
+    <script>
+      let element1 = document.querySelector(".box1");
+      let element2 = document.querySelector(".box2");
+      let element3 = document.querySelector(".box3");
+      let btn1 = document.querySelector(".btn1");
+      let btn2 = document.querySelector(".btn2");
+      let btn3 = document.querySelector(".btn3");
+      element1.onclick = function () {
+        btn1.innerHTML++;
+      };
+      element2.onclick = function () {
+        btn2.innerHTML++;
+      };
+      element3.onclick = function () {
+        btn3.innerHTML++;
+      };
+    </script>
+    <!-- End JS Code -->
+  </body>
+</html>
